@@ -1,0 +1,108 @@
+{
+  "name": "zeplin-roku",
+  "version": "1.0.0",
+  "author": {
+    "name": "Sam Heavner",
+    "email": "slheavner@gmail.com",
+    "url": "https://github.com/slheavner"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/slheavner/zeplin-roku"
+  },
+  "description": "",
+  "scripts": {
+    "start": "zem start",
+    "build": "zem build",
+    "clean": "zem clean",
+    "exec": "zem exec",
+    "test": "zem test",
+    "publish": "zem publish"
+  },
+  "zeplin": {
+    "displayName": "Roku SceneGraph",
+    "platforms": [
+      "web",
+      "android",
+      "ios",
+      "osx"
+    ],
+    "options": [
+      {
+        "name": "Use Real X, Y coordinates",
+        "type": "switch",
+        "id": "useRealXY",
+        "default": true
+      },
+      {
+        "name": "Hex Color Prefix (0xFFF)",
+        "type": "switch",
+        "id": "colorFormat",
+        "default": true
+      },
+      {
+        "name": "Add ID field to XML elements",
+        "type": "switch",
+        "id": "addId",
+        "default": true
+      },
+      {
+        "name": "Self Closing XML Tags",
+        "type": "switch",
+        "id": "selfClosingTags",
+        "default": true
+      },
+      {
+        "name": "Package Font Path",
+        "type": "text",
+        "id": "fontPath",
+        "default": "pkg:/fonts/"
+      },
+      {
+        "name": "Poster URI Placeholder",
+        "type": "text",
+        "id": "imageUriPlaceholder",
+        "default": "pkg:/locale/images/REPLACE_ME"
+      },
+      {
+        "name": "Use 9patch Poster for Rounded Rectangles",
+        "type": "switch",
+        "id": "use9PatchForRadius",
+        "default": true
+      },
+      {
+        "name": "9 Patch URI (formats to `${uri}${radius}px.9.png` ",
+        "type": "text",
+        "id": "roundedRectPath",
+        "default": "pkg:/locale/images/rounded-rect-"
+      },
+      {
+        "name": "Label Element Name",
+        "type": "text",
+        "id": "labelName",
+        "default": "Label"
+      },
+      {
+        "name": "Rectangle Element Name",
+        "type": "text",
+        "id": "rectangleName",
+        "default": "Rectangle"
+      },
+      {
+        "name": "Poster Element Name",
+        "type": "text",
+        "id": "posterName",
+        "default": "Poster"
+      },
+      {
+        "name": "Font Element Name",
+        "type": "text",
+        "id": "fontName",
+        "default": "Font"
+      }
+    ]
+  },
+  "dependencies": {
+    "zem": "^1.0.3"
+  }
+}
